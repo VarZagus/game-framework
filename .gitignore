@@ -7,6 +7,6 @@
 *.iml
 
 #Ignore maven specific files
-target
+target/
 pom.xml
 
