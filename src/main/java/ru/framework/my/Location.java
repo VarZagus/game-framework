@@ -3,12 +3,12 @@ package ru.framework.my;
 import java.util.ArrayList;
 
 //Локация, определяет размер карты.
-public class MLocation {
+public class Location {
 
     private int height;
     private int width;
 
-    public MLocation(int h, int w){
+    public Location(int h, int w){
         height = h;
         width = w;
     }

@@ -4,34 +4,34 @@ package ru.framework.my;
 Например камни, деревеья, постройки и т.д.
 Соответственно имеет только два состояния - позиция и сама локация.
  */
-public abstract class MObject extends MUnit{
-    protected int [] position = new int[2];
+public abstract class GameObject extends Unit{
+    protected Position position = new Position();
 
-    public MObject(MLocation location, int x, int y){
+    public GameObject(Location location, int x, int y){
         super(location);
-        position[0] = x;
-        position[1] = y;
+        position.x  = x;
+        position.y = y;
     }
 
     public int getPositionX() {
-        return position[0];
+        return position.x;
     }
 
     public int getPositionY() {
-        return position[1];
+        return position.y;
     }
 
     public void setPositionX(int x) {
         if(x < 0 || x > location.getWidth()){
             throw new UnitInOutsideException();
         }
-        position[0] = x;
+        position.x = x;
     }
     public void setPositionY(int y){
         if(y < 0 || y > location.getHeight()){
             throw new UnitInOutsideException();
         }
-        position[1] = y;
+        position.y = y;
     }
 
 }

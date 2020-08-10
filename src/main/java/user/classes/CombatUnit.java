@@ -1,19 +1,21 @@
 package user.classes;
 
-import ru.framework.my.MActioner;
-import ru.framework.my.MLocation;
-import ru.framework.my.MOrientation;
+import ru.framework.my.Actioner;;
+import ru.framework.my.Location;
+import ru.framework.my.Orientation;
 
-public abstract class CombatUnit extends MActioner {
+public abstract class CombatUnit extends Actioner {
     private int ammunition;
 
-    public CombatUnit(MLocation location, int x, int y, MOrientation orientation, int ammunition) {
+    public CombatUnit(Location location, int x, int y, Orientation orientation, int ammunition) {
         super(location, x,y);
         this.orientation = orientation;
         this.ammunition = ammunition;
     }
 
     public int getAmmunition(){return ammunition;}
-    public void shoot(){}
+    public void shoot(){
+        System.out.println("FIRE!!!");
+    }
 
 }

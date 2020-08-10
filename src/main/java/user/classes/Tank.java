@@ -1,24 +1,39 @@
 package user.classes;
 
-import ru.framework.my.MActioner;
-import ru.framework.my.MLocation;
-import ru.framework.my.MOrientation;
+import ru.framework.my.Actionable;
+import ru.framework.my.Actioner;
+import ru.framework.my.Location;
+import ru.framework.my.Orientation;
 
-public class Tank extends CombatUnit {
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Tank extends CombatUnit implements Actionable {
 
 
-    public Tank(MLocation location, int x, int y, MOrientation orientation, int amm) {
+    public Tank(Location location, int x, int y, Orientation orientation, int amm) {
         super(location, x, y, orientation, amm);
     }
 
     @Override
     public void action(String command) {
-        if(command == "T"){
+        if(command.equals("T")){
             turnClockwise();
-        } else if(command == "A"){
+        } else if(command.equals("A")){
             shoot();
-        } else if(command == "F"){
+        } else if(command.equals("F")){
             moveForwards();
         }
+    }
+
+    @Override
+    public Map<String,String> getAvailableCommands() {
+        Map<String,String> map = new HashMap<>();
+        map.put("T","turnClockwise");
+        map.put("A","shoot");
+        map.put("F","moveForwards");
+        return map;
     }
 }

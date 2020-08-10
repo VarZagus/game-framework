@@ -1,5 +1,5 @@
 package ru.framework.my;
 
-public enum MOrientation {
+public enum Orientation {
     NORTH, WEST, SOUTH, EAST;
 }
