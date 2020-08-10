@@ -3,10 +3,10 @@
 /workspace.xml
 
 #Ingore IDE specific files
-/.idea/*
-/*.iml
+.idea/
+*.iml
 
 #Ignore maven specific files
-/target/*
-/pom.xml
+target
+pom.xml
 
