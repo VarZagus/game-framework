@@ -1,12 +1,8 @@
 package user.classes;
 
-import ru.framework.my.Actionable;
-import ru.framework.my.Actioner;
-import ru.framework.my.Location;
-import ru.framework.my.Orientation;
+import ru.framework.my.*;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 

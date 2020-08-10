@@ -1,9 +1,8 @@
 package ru.framework.my;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
+
 
 public class Wind extends Unit implements Actionable{
     private Orientation orientation;

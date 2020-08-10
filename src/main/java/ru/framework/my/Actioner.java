@@ -1,7 +1,7 @@
 package ru.framework.my;
-/*
-Этот используется для создания продвинутых юнитов,
-которые могут перемещаться по карте и/или поворачиваться.
+/**
+ *Этот используется для создания продвинутых юнитов,
+ *которые могут перемещаться по карте и/или поворачиваться.
  */
 public abstract class Actioner extends GameObject {
     protected Orientation orientation = Orientation.NORTH;

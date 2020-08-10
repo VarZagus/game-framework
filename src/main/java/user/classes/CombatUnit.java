@@ -1,8 +1,6 @@
 package user.classes;
 
-import ru.framework.my.Actioner;;
-import ru.framework.my.Location;
-import ru.framework.my.Orientation;
+import ru.framework.my.*;
 
 public abstract class CombatUnit extends Actioner {
     private int ammunition;

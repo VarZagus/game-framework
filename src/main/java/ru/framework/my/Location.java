@@ -1,8 +1,9 @@
 package ru.framework.my;
 
-import java.util.ArrayList;
+/**
+ *Локация, определяет размер карты.
+ */
 
-//Локация, определяет размер карты.
 public class Location {
 
     private int height;
